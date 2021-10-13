@@ -1,1 +1,5 @@
-list(map(lambda i: print(i, end=''), [i for i in range(1, int(input()) + 1)]))
+def cube():
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
