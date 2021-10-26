@@ -1,3 +1,6 @@
-a = [1, 1, 2, 3, 6, 47, 89, 63, 1, 35, 45]
-s = set(a)
-print(s)
+marksheet = []
+for _ in range(0, int(input())):
+    marksheet.append([input(), float(input())])
+
+second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
+print('\n'.join([a for a, b in sorted(marksheet) if b == second_highest]))
